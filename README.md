@@ -71,5 +71,7 @@ CREATE TABLE customer_details(
 
 SELECT * FROM customer_details;
 ```
+### Data Cleaning [Credit_cardDetails]
+
 
 
