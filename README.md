@@ -16,9 +16,11 @@ This project focuses on credit card transaction analysis and includes SQL script
 
 **5. Streamlined Analysis:** Facilitate easy querying and analysis of credit card and customer data using structured SQL scripts.
 
+---
 ### Dataset
 Datasets are provided  in the repository.
 
+---
 ### Schemas
 Schema for Credit_cardDetails
 ```sql
@@ -71,6 +73,8 @@ CREATE TABLE customer_details(
 
 SELECT * FROM customer_details;
 ```
+
+---
 ### Data Cleaning [Credit_cardDetails]
 
 
