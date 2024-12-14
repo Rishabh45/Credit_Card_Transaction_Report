@@ -195,5 +195,5 @@ The Power BI dashboard in this project provides an interactive visualization of 
 The dashboard aims to assist stakeholders in identifying trends and optimizing strategies for customer engagement and profitability.
 
 #### Documentation
-For detailed insights, refer to the [Credit Card Report](./Credit_Card_Transaction_Report.pdf).
+For detailed insights, refer to the [Credit Card Transaction Report](./Credit_Card_Transaction_Report.pdf).
 
