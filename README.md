@@ -18,7 +18,7 @@ This project focuses on credit card transaction analysis and includes SQL script
 
 ---
 ### Dataset
-Datasets are provided  in the repository.
+#### Dataset Link : a - [Customer_details](./customer.csv).
 
 ---
 ### Schemas
