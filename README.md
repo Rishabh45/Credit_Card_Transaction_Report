@@ -178,3 +178,22 @@ USING zipcode :: INTEGER;
 ALTER TABLE customer_details1
 DROP COLUMN row_num;
 ```
+
+---
+### Credit Card Transaction Report (Dashboard)
+
+The Power BI dashboard in this project provides an interactive visualization of credit card transaction and customer data. Key features include:
+
+**1. Transaction Insights:** Analysis of spending patterns, total transaction amounts, and frequency by card categories.
+
+**2. Customer Demographics:** Breakdown of customer age groups, gender, income levels, and satisfaction scores.
+
+**3. Usage Trends:** Insights into credit utilization, revolving balances, and activation within the first 30 days.
+
+**4. Performance Metrics:** Visual representation of key metrics like total transactions, average utilization ratio, and customer acquisition costs.
+
+The dashboard aims to assist stakeholders in identifying trends and optimizing strategies for customer engagement and profitability.
+
+#### Documentation
+For detailed insights, refer to the [Credit Card Report](./Credit_Card_Transaction_Report.pdf).
+
