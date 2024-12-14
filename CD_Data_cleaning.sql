@@ -4,18 +4,22 @@
 -- a. Create CTE(No_Duplicates) with by removing all duplicates values from customer_details.
 WITH No_Duplicates AS ( SELECT * 
                         FROM ( SELECT *, 
-						               ROW_NUMBER() OVER(PARTITION BY client_num, state_cd, zipcode) AS row_num
-                               FROM customer_details )
-						k WHERE k.row_num = 1
-					   )
+				      ROW_NUMBER() OVER(PARTITION BY client_num, state_cd, zipcode) AS row_num
+                               FROM customer_details )k 
+	                WHERE k.row_num = 1 )
 SELECT * FROM No_Duplicates;
 
 -- b. Copy the clean data into another table(customer_details1)
-CREATE TABLE customer_details1 AS SELECT * FROM (SELECT * 
+CREATE TABLE customer_details1 
+AS SELECT * FROM 
+	      (SELECT * 
                         FROM ( SELECT *, 
-						               ROW_NUMBER() OVER(PARTITION BY client_num, state_cd, zipcode) AS row_num
-                               FROM customer_details )
-						k WHERE k.row_num = 1);
+				      ROW_NUMBER() OVER(PARTITION BY client_num, 
+	                                                             state_cd, 
+	                                                             zipcode)
+	                                           AS row_num
+                               FROM customer_details ) k 
+	                WHERE k.row_num = 1);
 
 SELECT * FROM customer_details1;
 
