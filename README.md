@@ -5,7 +5,7 @@
 This project focuses on credit card transaction analysis and includes SQL scripts for cleaning and managing data. It provides schemas for Credit_cardDetails and customer_details tables, detailing customer and transaction attributes. The data cleaning scripts address duplicates and format inconsistencies. Additionally, a Power BI report visualizes trends, customer demographics, and transaction insights.
 
 ---
-### Objective 
+#### Objective 
 **1. Data Quality Improvement:** Clean and standardize credit card and customer data by removing duplicates and correcting inconsistencies.
 
 **2. Data Organization:** Define robust database schemas to efficiently store and manage customer and transaction information.
