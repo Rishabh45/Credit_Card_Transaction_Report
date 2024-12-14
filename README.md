@@ -5,7 +5,7 @@
 This project focuses on credit card transaction analysis and includes SQL scripts for cleaning and managing data. It provides schemas for Credit_cardDetails and customer_details tables, detailing customer and transaction attributes. The data cleaning scripts address duplicates and format inconsistencies. Additionally, a Power BI report visualizes trends, customer demographics, and transaction insights.
 
 ---
-#### Objective 
+### Objective 
 **1. Data Quality Improvement:** Clean and standardize credit card and customer data by removing duplicates and correcting inconsistencies.
 
 **2. Data Organization:** Define robust database schemas to efficiently store and manage customer and transaction information.
@@ -76,7 +76,7 @@ SELECT * FROM customer_details;
 
 ---
 ### Data Cleaning (Credit_cardDetails)
-### 1. Removing all the duplicates values from the Credit_cardDetails table.
+#### 1. Removing all the duplicates values from the Credit_cardDetails table.
 ``` sql
 DELETE FROM Credit_cardDetails
 WHERE client_num 
@@ -93,7 +93,7 @@ WHERE client_num
 ```
 
 ---
-### 2. Removing Extra space from the table with the help of TRIM function.
+#### 2. Removing Extra space from the table with the help of TRIM function.
 ```sql
 UPDATE credit_carddetails
 SET card_category = TRIM(card_category),
@@ -104,14 +104,14 @@ SET card_category = TRIM(card_category),
 ```
 
 ---
-### 3. Replacing values of week_start_date Column to date format type eg. YYYY-MM-DD.
+#### 3. Replacing values of week_start_date Column to date format type eg. YYYY-MM-DD.
 ```sql
 UPDATE Credit_cardDetails
 SET week_start_date = TO_DATE(week_start_date,'DD-MM-YYYY');
 ```
 
 ---
-### 4. Converting Data Type of columns.
+#### 4. Converting Data Type of columns.
 ``` sql
 ALTER TABLE credit_carddetails
 ALTER COLUMN week_start_date TYPE DATE
